@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEvent">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+      <EditText
+          android:id="@+id/addDateEditText"
+          android:layout_width="263dp"
+          android:layout_height="59dp"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:hint="tarih" />
+
+      <EditText
+          android:id="@+id/addNurseEditText"
+          android:layout_width="260dp"
+          android:layout_height="60dp"
+          android:layout_marginBottom="20dp"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:hint="hemsire" />
+
+      <EditText
+          android:id="@+id/addEventEditText"
+          android:layout_width="385dp"
+          android:layout_height="446dp"
+          android:layout_marginBottom="120dp"
+          android:ems="10"
+          android:inputType="textMultiLine"
+          android:hint="Olaylar" />
+
+      <Button
+          android:id="@+id/btnEditEvent"
+          android:layout_width="119dp"
+          android:layout_height="56dp"
+          android:onClick="editEvent"
+          android:text="düzenle"
+          tools:ignore="OnClick" />
+
+      <Button
+          android:id="@+id/btnDeleteEvent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:onClick="deleteBook"
+          android:text="Delete"
+          tools:ignore="OnClick" />
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

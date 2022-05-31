@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditTreatment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/addDateEditText"
+                android:layout_width="263dp"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="saat" />
+
+            <EditText
+                android:id="@+id/addMedicineEditText"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="ilaç ismi" />
+
+            <EditText
+                android:id="@+id/addMethodEditText"
+                android:layout_width="385dp"
+                android:layout_height="446dp"
+                android:layout_marginBottom="120dp"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                android:hint="uygulama şekli" />
+
+            <Button
+                android:id="@+id/btnEditTreatment"
+                android:layout_width="119dp"
+                android:layout_height="56dp"
+                android:onClick="editTreatment"
+                android:text="düzenle"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btnDeleteTreatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="deleteTreatment"
+                android:text="yapıldı"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

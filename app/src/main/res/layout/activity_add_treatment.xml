@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTreatment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/addDateEditText"
+                android:layout_width="263dp"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:hint="saat"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/addMedicineEditText"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="ilaç"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/addMethodEditText"
+                android:layout_width="match_parent"
+                android:layout_height="446dp"
+                android:layout_marginBottom="120dp"
+                android:ems="10"
+                android:hint="uygulama şekli"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnEditTreatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="newTreatmentAdd"
+                android:text="Ekle" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
